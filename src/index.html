@@ -32,6 +32,7 @@
             color: white;
             text-align: center;
             margin-top: 15px;
+            margin-bottom: 15px;
         }
 
         .imgPoster {
@@ -63,6 +64,23 @@
 
         .rated{
             margin-left:10px;
+        }
+
+        .areaTv{
+            margin-top:20px;
+            background-color: rgb(36, 9, 43);
+            padding: 15px;
+        }
+
+        .txtTv p{
+            color:white;
+            margin-top:10%;
+            text-align: center;
+        }
+
+        .areaPesquisa{
+            margin-top:10px;
+            margin-bottom: 15px;
         }
 
         @media screen and (min-width:1023px) and (max-width:2000px){
@@ -138,9 +156,55 @@
                     </div>
                 </div>
             </div>
-            <!--PAREI AQUI-->
             <div class="row">
-
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="txtMsg">
+                                Populares na TV
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row areaTv">
+                        <div class="col-3" id="imgTvUm">
+                        </div>
+                        <div class="col-9" id="txtTvUm">
+                        </div>
+                    </div>
+                    <div class="row areaTv">
+                        <div class="col-3" id="imgTvDois">
+                        </div>
+                        <div class="col-9" id="txtTvDois">
+                        </div>
+                    </div>
+                    <div class="row areaTv">
+                        <div class="col-3" id="imgTvTres">
+                        </div>
+                        <div class="col-9" id="txtTvTres">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="txtMsg">
+                                Pesquise por um filme
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 areaPesquisa">
+                            <form>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Nome do filme" id="inputSearch" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary" id="btnPesquisa">Pesquisar</button>
+                              </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
